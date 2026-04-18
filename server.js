@@ -105,7 +105,7 @@ if (score < 75) {
 
 // 💾 Save to DB
 const sql = "INSERT INTO jobs (description, score, status) VALUES (?, ?, ?)";
-db.query(sql, [description, score, status]);
+//db.query(sql, [description, score, status]);
 
 // ✅ Final response
 res.json({ score, status, confidence, reasons, suggestions });
